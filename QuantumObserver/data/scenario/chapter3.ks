@@ -1,0 +1,90 @@
+; 第三章　三つの実験結果
+[cm]
+[bg storage="control_room.png" time="900"]
+[font color="0x88ddff" size="38" bold="true"]第三章　三つの実験結果[p]
+[font color="0xe8f6ff" size="26" bold="false"]
+制御室には御厨教授が三人いた。[p]
+中央の教授は白衣を着ている。左は喪服、右は患者衣のまま生命維持装置につながれている。[p]
+三人は互いを見ず、同じ言葉をわずかに違う順序で話した。[p]
+
+[font color="0xddbb88" bold="true"]教授A「久世君は死んだ。事故だった」[p]
+教授B「久世君は生きている。死んだのは君だ」[p]
+教授C「久世君という学生はいない。君が作った記憶だ」[p]
+[font color="0xe8f6ff" bold="false"]
+三つの証言は、どれも対応する世界では真実だった。[p]
+問題は、僕がどの世界に属しているかではない。[p]
+僕の意識そのものが三つの世界を接続し、互いを汚染していることだった。[p]
+
+御厨教授は一年前、久世を観測者にする実験を行った。[p]
+しかし久世は死の直前、僕と自分の量子状態を結びつけた。[p]
+彼女が消えた世界では僕が観測者となり、僕が死んだ世界では彼女が観測者となった。[p]
+事故のない世界では、僕たち二人とも実験を始める前の時間へ閉じ込められた。[p]
+
+[font color="0xaaddff" bold="true"]葵「先輩。どの世界を見るか選べます。でも、見るだけでその世界を強くしてしまう」[p]
+[font color="0xe8f6ff" bold="false"]
+三台のモニターが点灯した。[p]
+
+[cm]
+[glink text="久世が死んだ世界を観測する" target="*world_a" x="270" y="220" width="740" height="60" color="black" font_color="white" size="24"]
+[glink text="自分が死んだ世界を観測する" target="*world_b" x="270" y="320" width="740" height="60" color="red" font_color="white" size="24"]
+[glink text="事故のない世界を観測する" target="*world_c" x="270" y="420" width="740" height="60" color="navy" font_color="white" size="24"]
+[s]
+
+*world_a
+[eval exp="f.world_choice='a';f.observation_count+=2;f.trust_mikuri+=1"]
+[cm]
+[bg storage="lab_blood.png" time="400"]
+久世の死体が光学台の下に現れた。[p]
+彼女は一年前の姿のまま目を開き、僕を見上げた。[p]
+[font color="0xff7777" bold="true"]久世「あなたが教授を止めなかった世界。ここでは私は、ずっとあなたを待っていた」[p]
+[font color="0xe8f6ff" bold="false"]
+僕の記憶に、教授の腕を押さえた感触が戻った。それは止めるためではない。測定ボタンを押させるためだった。[p]
+[jump target="*world_join"]
+
+*world_b
+[eval exp="f.world_choice='b';f.observation_count+=3"]
+[cm]
+[bg storage="doppelganger.png" time="500"]
+モニターの中で僕の死体が起き上がった。[p]
+首には深い切創がある。それでも口元は笑っていた。[p]
+[font color="0xff7777" bold="true"]もう一人の僕「君は僕が死んだあとに作られた代替品だ。返してくれ、その身体を」[p]
+[font color="0xe8f6ff" bold="false"]
+画面へ触れた指先から、死んだ僕の記憶が流れ込む。[p]
+久世を逃がし、代わりに観測椅子へ座ったのは僕だった。[p]
+[jump target="*world_join"]
+
+*world_c
+[eval exp="f.world_choice='c';f.observation_count+=1;f.trust_aoi+=1"]
+[cm]
+[bg storage="room.jpg" time="500"]
+朝の研究室で、久世がコーヒーを淹れていた。[p]
+葵は笑いながら卒業論文の愚痴を言い、教授は実験の延期を告げた。[p]
+誰も死んでいない。理想的な世界だった。[p]
+だが窓の外には大学以外の建物が一つもなく、空には巨大な人間の眼が浮かんでいた。[p]
+[font color="0xff7777" bold="true"]久世「ここは事故直前の十四秒を繰り返す箱庭。幸せだけど、生きてはいない」[p]
+[font color="0xe8f6ff" bold="false"]
+[jump target="*world_join"]
+
+*world_join
+[cm]
+[bg storage="control_room.png" time="800"]
+観測を終えると、三人の教授は一人へ重なった。[p]
+教授の顔には何十年分もの疲労が刻まれていた。[p]
+
+[font color="0xddbb88" bold="true"]御厨「私は最善の結果を残そうとした。だが最善とは、観測者が耐えられる結果にすぎない」[p]
+[font color="0xe8f6ff" bold="false"]
+教授は制御卓の隠しスロットから、まだ届いていない測定票を取り出した。[p]
+発行日時は明日の午前二時十三分。観測者欄には「プレイヤー」と印字されている。[p]
+
+[font color="0xffcc88" bold="true"]【観測記録4：未来から届いた測定結果を取得】[p]
+[eval exp="f.log_future=true;f.log_count+=1"]
+[font color="0xe8f6ff" bold="false"]
+結果欄にはこう書かれていた。[p]
+『四記録を取得した観測者は、装置の外部に存在する。物語内の人物ではない』[p]
+
+僕たちを見ている何かがいる。[p]
+僕が選択肢を選ぶより先に、結果を知っている何か。[p]
+その視線を意識した瞬間、部屋の全モニターがこちらを向いた。[p]
+
+[call storage="chapter4.ks"]
+[return]
