@@ -18,6 +18,20 @@
         button.innerHTML = active ? '<span>▶</span> AUTO ON' : '<span>▷</span> AUTO';
     }
 
+    function alignControls() {
+        var base = document.getElementById("tyrano_base");
+        var guide = document.querySelector(".mobile-control-guide");
+        var button = getButton();
+        if (!base || !guide || !button) return;
+        var rect = base.getBoundingClientRect();
+        var right = Math.max(8, window.innerWidth - Math.min(rect.right, window.innerWidth) + 8);
+        var top = Math.max(8, rect.top + 8);
+        guide.style.right = right + "px";
+        guide.style.top = top + "px";
+        button.style.right = right + "px";
+        button.style.top = (top + guide.offsetHeight + 6) + "px";
+    }
+
     function toggleAuto(event) {
         event.preventDefault();
         event.stopPropagation();
@@ -51,6 +65,10 @@
             event.stopPropagation();
         }, true);
         updateButton();
+        alignControls();
+        window.addEventListener("resize", alignControls);
+        window.addEventListener("orientationchange", function () { setTimeout(alignControls, 150); });
+        setTimeout(alignControls, 500);
         setInterval(updateButton, 300);
     }
 

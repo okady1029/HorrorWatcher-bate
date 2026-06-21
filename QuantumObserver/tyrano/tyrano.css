@@ -1141,31 +1141,32 @@ img#remodal-cancel {
 @media (hover: none) and (pointer: coarse), (max-width: 820px) {
     .mobile-control-guide {
         position: fixed;
-        top: max(10px, env(safe-area-inset-top));
-        right: max(10px, env(safe-area-inset-right));
+        top: 8px;
+        right: 8px;
         z-index: 2147483646;
         display: flex;
-        gap: 6px;
-        padding: 7px;
-        color: #fff;
-        background: rgba(5, 12, 25, .82);
-        border: 1px solid rgba(122, 205, 255, .9);
-        border-radius: 10px;
-        box-shadow: 0 3px 14px rgba(0, 0, 0, .65);
+        gap: 2px;
+        padding: 3px 5px;
+        color: rgba(235, 248, 255, .86);
+        background: rgba(5, 12, 25, .5);
+        border: 1px solid rgba(122, 205, 255, .45);
+        border-radius: 7px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, .35);
         font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-        font-size: clamp(9px, 2.4vw, 12px);
-        line-height: 1.25;
+        font-size: clamp(8px, 1.7vw, 10px);
+        line-height: 1.1;
         letter-spacing: .02em;
         pointer-events: none;
         user-select: none;
         -webkit-user-select: none;
+        opacity: .72;
     }
 
     .mobile-control-guide > div {
         display: flex;
         align-items: center;
-        gap: 5px;
-        padding: 2px 5px;
+        gap: 3px;
+        padding: 2px 4px;
         white-space: nowrap;
     }
 
@@ -1176,36 +1177,37 @@ img#remodal-cancel {
     .mobile-control-guide__icon {
         display: grid;
         place-items: center;
-        width: 23px;
-        height: 23px;
-        flex: 0 0 23px;
-        color: #bdeaff;
-        border: 1px solid rgba(189, 234, 255, .9);
+        width: 16px;
+        height: 16px;
+        flex: 0 0 16px;
+        color: rgba(189, 234, 255, .85);
+        border: 1px solid rgba(189, 234, 255, .55);
         border-radius: 50%;
-        font-size: 16px;
+        font-size: 11px;
         font-weight: 700;
     }
 
     .mobile-control-guide strong {
-        color: #ffe798;
-        font-size: 1.08em;
+        color: rgba(255, 231, 152, .88);
+        font-size: 1em;
     }
 
     .auto-advance-button {
         position: fixed;
-        top: calc(max(10px, env(safe-area-inset-top)) + 64px);
-        right: max(10px, env(safe-area-inset-right));
+        top: 44px;
+        right: 8px;
         z-index: 2147483646;
         display: block;
-        min-width: 112px;
-        padding: 9px 13px;
-        color: #e7f8ff;
-        background: linear-gradient(180deg, rgba(29, 66, 96, .96), rgba(5, 17, 31, .96));
-        border: 1px solid #7bd8ff;
-        border-radius: 9px;
-        box-shadow: 0 3px 14px rgba(0, 0, 0, .65);
-        font: 700 12px/1.2 -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-        letter-spacing: .08em;
+        min-width: 82px;
+        padding: 6px 10px;
+        color: rgba(231, 248, 255, .9);
+        background: linear-gradient(180deg, rgba(29, 66, 96, .72), rgba(5, 17, 31, .72));
+        border: 1px solid rgba(123, 216, 255, .58);
+        border-radius: 7px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, .4);
+        font: 700 10px/1.2 -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+        letter-spacing: .06em;
+        opacity: .78;
         cursor: pointer;
         touch-action: manipulation;
     }
@@ -1214,6 +1216,7 @@ img#remodal-cancel {
         color: #07131f;
         background: linear-gradient(180deg, #bcecff, #66c9ef);
         box-shadow: 0 0 18px rgba(102, 201, 239, .9);
+        opacity: .95;
     }
 
     .auto-advance-button.is-blocked {
