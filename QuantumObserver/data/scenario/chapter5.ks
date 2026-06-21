@@ -21,7 +21,7 @@
 
 [font color="0xff7777" size="32" bold="true"]お願いだ。僕がここにいると、見ていてくれ。[p]
 [font color="0xffffff" size="42" bold="true"]END A　収束[p]
-[jump target="*ending_menu"]
+[jump storage="title_screen.ks"]
 
 *end_b
 [eval exp="sf.end_b=1;sf.end_count=(Number(sf.end_a)>0?1:0)+(Number(sf.end_b)>0?1:0)+(Number(sf.end_c)>0?1:0)+(Number(sf.end_d)>0?1:0);TYRANO.kag.saveSystemVariable()"]
@@ -40,7 +40,7 @@
 久世ともう一人の僕が、無数の声で囁いた。[p]
 [font color="0xff4444" size="31" bold="true"]「あなたが読むたび、死に方が一つ増える」[p]
 [font color="0xff3333" size="42" bold="true"]END B　重ね合わせ[p]
-[jump target="*ending_menu"]
+[jump storage="title_screen.ks"]
 
 *end_c
 [eval exp="sf.end_c=1;sf.end_count=(Number(sf.end_a)>0?1:0)+(Number(sf.end_b)>0?1:0)+(Number(sf.end_c)>0?1:0)+(Number(sf.end_d)>0?1:0);TYRANO.kag.saveSystemVariable()"]
@@ -59,7 +59,7 @@
 画面を閉じても遅い。観測はすでに成立している。[p]
 [font color="0xff5555" size="32" bold="true"]いま暗い画面に映る顔は、本当にあなたの顔だろうか。[p]
 [font color="0xffffff" size="42" bold="true"]END C　観測者[p]
-[jump target="*ending_menu"]
+[jump storage="title_screen.ks"]
 
 *end_d
 [eval exp="sf.end_d=1;sf.end_count=(Number(sf.end_a)>0?1:0)+(Number(sf.end_b)>0?1:0)+(Number(sf.end_c)>0?1:0)+(Number(sf.end_d)>0?1:0);TYRANO.kag.saveSystemVariable()"]
@@ -99,7 +99,7 @@
 [font color="0x88ffcc" size="28" bold="true"]外部観測者との接続：解除済み[p]
 [font color="0x88ffcc" size="32" bold="true"]結果：すべての観測者を解放。[p]
 [font color="0x88ffcc" size="42" bold="true"]TRUE END　デコヒーレンス[p]
-[jump target="*ending_menu"]
+[jump storage="title_screen.ks"]
 
 *ending_menu
 [cm]

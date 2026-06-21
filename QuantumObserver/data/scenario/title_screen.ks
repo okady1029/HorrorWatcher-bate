@@ -55,10 +55,10 @@
 [else]
 [font color="0x667788"]○ TRUE END「？？？」　未観測[r]
 [endif]
-[cm]
-[layopt layer="message0" visible="false"]
 [glink text="タイトルへ戻る" target="*back_title" x="430" y="610" width="420" height="55" color="black" font_color="white" size="22"]
 [s]
 
 *back_title
+[cm]
+[layopt layer="message0" visible="false"]
 [jump target="*title_menu"]
