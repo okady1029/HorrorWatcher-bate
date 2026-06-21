@@ -18,6 +18,7 @@
 無数の死を経験するたび、彼は生きている僕の記憶を一つ奪った。[p]
 
 だから僕は事故を忘れた。久世を忘れた。自分がすでに死んだ可能性も忘れた。[p]
+[eval exp="quantumPhone.receive('dead_toru','水城 透（この端末）','君が忘れるたび、僕の受信箱には記憶が増えた。このスマホは僕たち二人の墓標だ。','02:13',false)"]
 
 [font color="0xaaddff" bold="true"]葵「先輩のどちらかを選べば、また一人が消えます。選ばなければ二人とも崩壊します」[p]
 [font color="0xe8f6ff" bold="false"]
@@ -28,17 +29,23 @@
 久世の声が天井のスピーカーから落ちてきた。[p]
 [font color="0xff9999" bold="true"]久世『四つの記録があるなら、三つ目の方法を選べる』[p]
 久世『装置を止めるんじゃない。観測者と結果の結びつきを切るの』[p]
+[eval exp="quantumPhone.receive('final_instruction','久世真琴','四つの記録と五つの保護メッセージを確認して。最後に機内モードへ。外部観測だけを遮断できる。','02:13',false)"]
 [font color="0xe8f6ff" bold="false"]
 デコヒーレンス。量子状態を外部環境へ拡散し、干渉できなくする現象。[p]
 僕たちを一つの物語として見ている外部観測者——画面の向こうの誰かへ、選択を返す。[p]
 
 もう一人の僕が光学台を越えて近づいた。[p]
 彼の黒い眼球に、これまで選ばれなかったすべての場面が映っている。[p]
+[eval exp="quantumPhone.receive('last_signal','送信者不明','信号強度 0％。それでも受信中。これは通信ではなく、観測そのものです。','02:13:07',false)"]
 
 [cm]
 [glink text="もう一人の自分を観測する" target="*final_observe" x="280" y="220" width="720" height="60" color="red" font_color="white" size="24"]
 [glink text="教授に緊急停止を命じる" target="*final_stop" x="280" y="320" width="720" height="60" color="gray" font_color="white" size="24"]
+[if exp="f.log_count>=4&&f.phone_key_count>=5"]
+[glink text="スマホを機内モードにして観測を拒否する" target="*final_refuse" x="280" y="420" width="720" height="60" color="navy" font_color="white" size="24"]
+[else]
 [glink text="目を閉じ、外部の視線を探す" target="*final_refuse" x="280" y="420" width="720" height="60" color="navy" font_color="white" size="24"]
+[endif]
 [s]
 
 *final_observe
@@ -63,7 +70,9 @@
 *final_refuse
 [eval exp="f.final_choice='refuse'"]
 [cm]
-[if exp="f.log_count>=4"]
+[if exp="f.log_count>=4&&f.phone_key_count>=5"]
+[eval exp="f.phone_airplane=true;quantumPhone.update()"]
+[eval exp="quantumPhone.receive('connection_closed','SYSTEM QO-13','機内モード。外部観測者との接続を切断しました。','02:13',false)"]
 [call storage="chapter5.ks" target="*end_d"]
 [else]
 [call storage="chapter5.ks" target="*end_c"]

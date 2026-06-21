@@ -32,6 +32,7 @@
 
 *world_a
 [eval exp="f.world_choice='a';f.observation_count+=2;f.trust_mikuri+=1"]
+[eval exp="quantumPhone.receive('world_key','久世真琴（死亡）','私が消えた世界でも端末は残った。最後は通信を止めて。電源ではなく、機内モードで。','02:13',true)"]
 [cm]
 [bg storage="lab_blood.png" time="400"]
 久世の死体が光学台の下に現れた。[p]
@@ -43,6 +44,7 @@
 
 *world_b
 [eval exp="f.world_choice='b';f.observation_count+=3"]
+[eval exp="quantumPhone.receive('world_key','水城 透（死亡）','端末を壊すな。外との相関まで切れば僕たちは永遠に閉じる。機内モードだけが観測を拒否できる。','死亡後 +1年',true)"]
 [cm]
 [bg storage="doppelganger.png" time="500"]
 モニターの中で僕の死体が起き上がった。[p]
@@ -55,6 +57,7 @@
 
 *world_c
 [eval exp="f.world_choice='c';f.observation_count+=1;f.trust_aoi+=1"]
+[eval exp="quantumPhone.receive('world_key','篠宮 葵（未来）','この箱庭には基地局がありません。それでも届く通信だけを最後に遮断してください。','明日 02:13',true)"]
 [cm]
 [bg storage="room.jpg" time="500"]
 朝の研究室で、久世がコーヒーを淹れていた。[p]
@@ -68,6 +71,7 @@
 *world_join
 [cm]
 [bg storage="control_room.png" time="800"]
+[eval exp="quantumPhone.receive('world_return','端末システム','異なる世界のSIM情報を統合しました。連絡先の競合：4件。死亡状態の競合：2件。','02:13',false)"]
 観測を終えると、三人の教授は一人へ重なった。[p]
 教授の顔には何十年分もの疲労が刻まれていた。[p]
 
@@ -75,6 +79,7 @@
 [font color="0xe8f6ff" bold="false"]
 教授は制御卓の隠しスロットから、まだ届いていない測定票を取り出した。[p]
 発行日時は明日の午前二時十三分。観測者欄には「プレイヤー」と印字されている。[p]
+[eval exp="quantumPhone.receive('player_seen','SYSTEM QO-13','外部観測者を検出。タップと選択操作が測定結果として記録されています。','NOW',false)"]
 
 [font color="0xffcc88" bold="true"]【観測記録4：未来から届いた測定結果を取得】[p]
 [eval exp="f.log_future=true;f.log_count+=1"]
@@ -83,6 +88,7 @@
 『四記録を取得した観測者は、装置の外部に存在する。物語内の人物ではない』[p]
 
 僕たちを見ている何かがいる。[p]
+[eval exp="quantumPhone.receive('future_result','篠宮 葵（観測終了後）','この通知を読めたなら、私はまだ結果の外にいます。先輩、最後だけは誰にも選ばせないで。','観測終了後',false)"]
 僕が選択肢を選ぶより先に、結果を知っている何か。[p]
 その視線を意識した瞬間、部屋の全モニターがこちらを向いた。[p]
 

@@ -2,6 +2,7 @@
 
 *end_a
 [eval exp="sf.end_a=1;sf.end_count=(Number(sf.end_a)>0?1:0)+(Number(sf.end_b)>0?1:0)+(Number(sf.end_c)>0?1:0)+(Number(sf.end_d)>0?1:0);TYRANO.kag.saveSystemVariable()"]
+[eval exp="quantumPhone.receive('end_a_phone','連絡先なし','収束完了。久世真琴という連絡先は存在しません。','--:--',false)"]
 [cm]
 [bg storage="lab_clean.png" time="1300"]
 [font color="0x88ddff" size="38" bold="true"]第五章　波動関数の収束[p]
@@ -24,6 +25,7 @@
 
 *end_b
 [eval exp="sf.end_b=1;sf.end_count=(Number(sf.end_a)>0?1:0)+(Number(sf.end_b)>0?1:0)+(Number(sf.end_c)>0?1:0)+(Number(sf.end_d)>0?1:0);TYRANO.kag.saveSystemVariable()"]
+[eval exp="quantumPhone.receive('end_b_phone','水城 透 × ∞','次は、どの僕がこの通知を読む？','02:13',false)"]
 [cm]
 [bg storage="lab_blood.png" time="500"]
 [font color="0x88ddff" size="38" bold="true"]第五章　波動関数の収束[p]
@@ -42,6 +44,7 @@
 
 *end_c
 [eval exp="sf.end_c=1;sf.end_count=(Number(sf.end_a)>0?1:0)+(Number(sf.end_b)>0?1:0)+(Number(sf.end_c)>0?1:0)+(Number(sf.end_d)>0?1:0);TYRANO.kag.saveSystemVariable()"]
+[eval exp="quantumPhone.receive('end_c_phone','送信先：プレイヤー','記録が足りない。次の観測ではスマホの保護メッセージを集めて。','NOW',false)"]
 [cm]
 [bg storage="doppelganger.png" time="900"]
 [font color="0x88ddff" size="38" bold="true"]第五章　波動関数の収束[p]
@@ -60,11 +63,13 @@
 
 *end_d
 [eval exp="sf.end_d=1;sf.end_count=(Number(sf.end_a)>0?1:0)+(Number(sf.end_b)>0?1:0)+(Number(sf.end_c)>0?1:0)+(Number(sf.end_d)>0?1:0);TYRANO.kag.saveSystemVariable()"]
+[eval exp="f.phone_airplane=true;quantumPhone.update()"]
 [cm]
 [bg storage="lab_clean.png" time="1400"]
 [font color="0x88ddff" size="38" bold="true"]第五章　波動関数の収束[p]
 [font color="0xe8f6ff" size="26" bold="false"]
 僕は目を閉じ、四つの記録を床へ並べた。[p]
+スマホには五つの保護メッセージが残っていた。久世の警告、未来の死体写真、一年前から続く通話、教授の未送信文、そして別世界からの機内モード指示。[p]
 事故報告書は久世が死んだ世界。音声は久世が生きている世界。[p]
 改ざん前ログは僕が選択した世界。未来の測定結果は、まだ誰も選択していない世界。[p]
 
@@ -79,6 +84,7 @@
 [font color="0x88ddff" size="31" bold="true"]「僕たちのうち、誰を本物にする？」[p]
 [font color="0xe8f6ff" size="26" bold="false"]
 答えは必要なかった。問いを外へ渡した瞬間、装置と僕たちの相関が切れた。[p]
+僕はスマホを機内モードへ切り替えた。アンテナ表示が消え、二時十三分から動かなかった時計が初めて一秒進んだ。[p]
 干渉縞が消える。血に沈んだ世界も、事故のない箱庭も、それぞれ遠ざかっていく。[p]
 
 朝の実験室に僕、久世、葵、教授が立っていた。[p]
@@ -90,6 +96,7 @@
 彼女が廊下へ出ると、朝日がその輪郭を白く溶かした。[p]
 端末には新しい測定結果が一行だけ残った。[p]
 
+[font color="0x88ffcc" size="28" bold="true"]外部観測者との接続：解除済み[p]
 [font color="0x88ffcc" size="32" bold="true"]結果：すべての観測者を解放。[p]
 [font color="0x88ffcc" size="42" bold="true"]TRUE END　デコヒーレンス[p]
 [jump target="*ending_menu"]
