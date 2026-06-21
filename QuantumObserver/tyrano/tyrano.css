@@ -1128,3 +1128,62 @@ img#remodal-cancel {
     pointer-events: none;/*クリックできなくなるのを防ぐため。noneで対応*/
     opacity: 1;
 }
+
+/* Smartphone gesture help. Kept outside the scaled game canvas. */
+.mobile-control-guide {
+    display: none;
+}
+
+@media (hover: none) and (pointer: coarse), (max-width: 820px) {
+    .mobile-control-guide {
+        position: fixed;
+        top: max(10px, env(safe-area-inset-top));
+        right: max(10px, env(safe-area-inset-right));
+        z-index: 2147483646;
+        display: flex;
+        gap: 6px;
+        padding: 7px;
+        color: #fff;
+        background: rgba(5, 12, 25, .82);
+        border: 1px solid rgba(122, 205, 255, .9);
+        border-radius: 10px;
+        box-shadow: 0 3px 14px rgba(0, 0, 0, .65);
+        font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+        font-size: clamp(9px, 2.4vw, 12px);
+        line-height: 1.25;
+        letter-spacing: .02em;
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .mobile-control-guide > div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 2px 5px;
+        white-space: nowrap;
+    }
+
+    .mobile-control-guide > div + div {
+        border-left: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    .mobile-control-guide__icon {
+        display: grid;
+        place-items: center;
+        width: 23px;
+        height: 23px;
+        flex: 0 0 23px;
+        color: #bdeaff;
+        border: 1px solid rgba(189, 234, 255, .9);
+        border-radius: 50%;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .mobile-control-guide strong {
+        color: #ffe798;
+        font-size: 1.08em;
+    }
+}
