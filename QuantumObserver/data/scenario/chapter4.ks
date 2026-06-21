@@ -18,7 +18,7 @@
 無数の死を経験するたび、彼は生きている僕の記憶を一つ奪った。[p]
 
 だから僕は事故を忘れた。久世を忘れた。自分がすでに死んだ可能性も忘れた。[p]
-[eval exp="quantumPhone.receive('dead_toru','水城 透（この端末）','君が忘れるたび、僕の受信箱には記憶が増えた。このスマホは僕たち二人の墓標だ。','02:13',false)"]
+[eval exp="quantumPhone.receive('dead_toru','ロマ男（この端末）','君が忘れるたび、僕の受信箱には記憶が増えた。このスマホは僕たち二人の墓標だ。','02:13',false)"]
 
 [font color="0xaaddff" bold="true"]葵「先輩のどちらかを選べば、また一人が消えます。選ばなければ二人とも崩壊します」[p]
 [font color="0xe8f6ff" bold="false"]

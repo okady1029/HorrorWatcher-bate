@@ -44,7 +44,7 @@
 
 *world_b
 [eval exp="f.world_choice='b';f.observation_count+=3"]
-[eval exp="quantumPhone.receive('world_key','水城 透（死亡）','端末を壊すな。外との相関まで切れば僕たちは永遠に閉じる。機内モードだけが観測を拒否できる。','死亡後 +1年',true)"]
+[eval exp="quantumPhone.receive('world_key','ロマ男（死亡）','端末を壊すな。外との相関まで切れば僕たちは永遠に閉じる。機内モードだけが観測を拒否できる。','死亡後 +1年',true)"]
 [cm]
 [bg storage="doppelganger.png" time="500"]
 モニターの中で僕の死体が起き上がった。[p]

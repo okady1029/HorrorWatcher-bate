@@ -25,7 +25,7 @@
 
 *end_b
 [eval exp="sf.end_b=1;sf.end_count=(Number(sf.end_a)>0?1:0)+(Number(sf.end_b)>0?1:0)+(Number(sf.end_c)>0?1:0)+(Number(sf.end_d)>0?1:0);TYRANO.kag.saveSystemVariable()"]
-[eval exp="quantumPhone.receive('end_b_phone','水城 透 × ∞','次は、どの僕がこの通知を読む？','02:13',false)"]
+[eval exp="quantumPhone.receive('end_b_phone','ロマ男 × ∞','次は、どの僕がこの通知を読む？','02:13',false)"]
 [cm]
 [bg storage="lab_blood.png" time="500"]
 [font color="0x88ddff" size="38" bold="true"]第五章　波動関数の収束[p]
@@ -76,7 +76,7 @@
 互いに矛盾する記録は、同じ観測装置の中では共存できない。[p]
 だが外部へ情報を漏らせば、位相関係は失われる。結果は干渉せず、それぞれの世界として残る。[p]
 
-[font color="0xff9999" bold="true"]久世『透くん。私を一つに決めないで』[p]
+[font color="0xff9999" bold="true"]久世『ロマ男くん。私を一つに決めないで』[p]
 [font color="0xe8f6ff" bold="false"]
 僕は記録を一枚ずつ読み上げた。葵も教授も、知っている事実を声にした。[p]
 最後に、画面の向こうにいるあなたへ問いかけた。[p]
