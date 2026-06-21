@@ -25,13 +25,36 @@
 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
 	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	/* Every text choice must remain visible even when an unknown color name is used. */
+	color: #fff;
+	border: 2px solid rgba(145, 205, 255, .9);
+	background-color: rgba(12, 25, 48, .94);
+	background-image: linear-gradient(180deg, rgba(42, 75, 112, .96), rgba(7, 15, 31, .98));
+	box-sizing: border-box;
+	box-shadow: 0 4px 14px rgba(0, 0, 0, .55), inset 0 1px 0 rgba(255, 255, 255, .18);
 }
 .glink_button:hover {
 	text-decoration: none;
+	filter: brightness(1.22);
+	box-shadow: 0 0 18px rgba(93, 190, 255, .7), inset 0 1px 0 rgba(255, 255, 255, .25);
 }
 .glink_button:active {
 	position: relative;
 	top: 1px;
+}
+
+/* TyranoScript has no built-in `navy` glink theme, so define it explicitly. */
+.glink_button.navy,
+.navy {
+	color: #fff;
+	border: 2px solid #57a9e8;
+	background-color: #102b4d;
+	background-image: linear-gradient(180deg, #245b8f, #091a31);
+}
+.glink_button.navy:hover,
+.navy:hover {
+	background-color: #17446f;
+	background-image: linear-gradient(180deg, #3679b4, #102a4a);
 }
 
 
