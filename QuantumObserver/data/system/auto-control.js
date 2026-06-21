@@ -51,6 +51,9 @@
                 }, 1400);
                 return;
             }
+            /* About 1.5–2.5 seconds for an average Japanese message. */
+            TYRANO.kag.config.autoSpeed = "900";
+            TYRANO.kag.config.autoSpeedWithText = "35";
             TYRANO.kag.ftag.startTag("autostart", {});
         }
         setTimeout(updateButton, 0);
